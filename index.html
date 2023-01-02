@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<title>Weather App</title>
+	</head>
+	<body>
+		<main>
+			<input type="search" placeholder="Search city" />
+			<div id="general-info">
+				<div id="location"></div>
+				<div class="weather-details">
+					<div id="temp"></div>
+					<div class="other-details">
+						<div>Wind: <span id="wind-speed"></span> km/h</div>
+						<div>Humidity: <span id="humidity"></span>%</div>
+					</div>
+				</div>
+			</div>
+			<div class="icon-description-container">
+				<img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" />
+				<span id="weather-description"></span>
+			</div>
+		</main>
+	</body>
+</html>

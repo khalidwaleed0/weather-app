@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+
+body {
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.2) url("background.jpg");
+	background-blend-mode: darken;
+	background-size: cover;
+	background-position: center;
+}
+
+main {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 24px 10%;
+}
+
+input {
+	align-self: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 250px;
+	padding: 10px 14px;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 18px;
+}
+
+input::placeholder {
+	color: white;
+}
+
+input::-webkit-search-cancel-button{
+	display: none;
+}
+
+#general-info {
+	margin-top: auto;
+}
+
+#location {
+	margin-bottom: 16px;
+	font-size: 48px;
+}
+
+.weather-details {
+	display: flex;
+	gap: 36px;
+}
+
+#temp {
+	position: relative;
+	font-size: 120px;
+	font-weight: bold;
+}
+
+#temp::after {
+	position: absolute;
+	content: "°";
+	font-size: 48px;
+	top: 0px;
+}
+
+.other-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-left: 1px solid white;
+	padding-left: 24px;
+	font-size: 24px;
+}
+
+.icon-description-container {
+	display: flex;
+	align-items: center;
+}
+
+img {
+	width: 100px;
+}
+
+#weather-description {
+	padding-bottom: 6px;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+@media (max-width: 618px) {
+	#temp {
+		font-size: 72px;
+	}
+}
