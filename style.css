@@ -95,6 +95,9 @@ img {
 }
 
 @media (max-width: 618px) {
+	main {
+		padding: 24px 6%;
+	}
 	input {
 		width: 75%;
 	}
