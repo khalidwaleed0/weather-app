@@ -4,9 +4,11 @@
 	box-sizing: border-box;
 	color: white;
 }
-
+html {
+	height: 100%;
+}
 body {
-	height: 100vh;
+	height: 100%;
 	background: rgba(0, 0, 0, 0.2) url("background.jpg");
 	background-blend-mode: darken;
 	background-size: cover;
@@ -37,7 +39,7 @@ input::placeholder {
 	color: white;
 }
 
-input::-webkit-search-cancel-button{
+input::-webkit-search-cancel-button {
 	display: none;
 }
 
@@ -93,6 +95,9 @@ img {
 }
 
 @media (max-width: 618px) {
+	input {
+		width: 75%;
+	}
 	#temp {
 		font-size: 72px;
 	}
